@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace WebApplication2
+{
+    public partial class Page : System.Web.UI.MasterPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // SE O USUÁRIO ESTIVER AUTENTICADO LIBERE AS OPÇÕES EXCLUSIVAS DO MENU
+            Excecoes.Visible = true;
+        }
+    }
+}
